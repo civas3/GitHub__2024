@@ -1,0 +1,176 @@
+/* Import mixins from the "sass/mixins" file */
+@import "sass/mixins";
+/*-------------------------------------------*\
+Top navigation DESKTOP
+\*-------------------------------------------*/
+
+/* navigation links */
+nav {
+
+    /* Desktop navigation */
+    .desktop-nav {
+        display: flex;
+        justify-content: space-between;
+
+        /* Responsive - tablet landscape and below */
+        @include respond(tab-land-max) {
+            display: none;
+        }
+
+        /* Navigation container */
+        &__nav {
+            width: 14%;
+        }
+
+        /* Logo styles */
+        &__logo {
+            padding-top: 20px;
+        }
+
+        /* Navigation links container */
+        &__links {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 86%;
+
+            /* Navigation links list */
+            ul {
+                display: flex;
+            }
+
+            /* Individual list item styles */
+            li {
+                padding-right: 25px;
+            }
+
+            /* Primary navigation links anchor styles */
+            a {
+                color: #292929;
+                font-size: 1.4rem;
+            }
+        }
+
+        /* Secondary navigation links container */
+        &__links--secondary {
+            display: flex;
+            justify-content: space-between;
+
+            /* Left side of secondary links */
+            &__left-side {
+                ul {
+                    min-height: 40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+
+            /* Right side of secondary links */
+            &__right-side {
+                padding-right: 10px;
+
+                ul {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .cta-button {
+                    padding: 10px 15px;
+                }
+
+                /* Navigation search button */
+                .nav-search-button:before {
+                    content: "\f002";
+                    font-family: FontAwesome;
+                    font-size: 1.7rem;
+                    color: gray;
+                    padding-right: 5px;
+                }
+            }
+        }
+
+        /* Primary navigation links container */
+        &__links--primary {
+            padding-bottom: 10px;
+
+            /* Navigation "Menu" drop button */
+            .menu-dropdown-button {
+                border: none;
+                background-color: transparent;
+                color: inherit;
+                font-size: 1.6rem;
+                cursor: pointer;
+
+                /* Add the transition property for smooth fa-chevron-down icon rotation */
+                .rotate-icon {
+                    transition: transform 0.3s ease;
+
+                }
+            }
+
+
+            /* the dropdown menu content */
+            .menu-dropdown-content {
+                display: none;
+                position: absolute;
+                left: 0;
+                margin-top: 30px;
+                height: 700px;
+                width: 100%;
+                z-index: 1;
+                border: 1px solid rgba(0, 0, 0, .15);
+                border-radius: 5px;
+                background-color: white;
+                text-align: center;
+
+                /* Grid layout for dropdown menu items */
+                ul {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    max-width: 1020px;
+                    margin: auto;
+                    padding-top: 50px;
+                }
+
+                /* dropdown menu item links */
+                a {
+                    display: grid;
+                    grid-template-columns: 78px auto;
+                    align-items: center;
+                    gap: 10px;
+                    text-align: left;
+                }
+
+                /* View full menu button styles */
+                .view-full-menu-button {
+                    max-width: 1020px;
+                    background: #fff;
+                    border: 1px solid #adadad;
+                    border-radius: 0.25rem;
+                    -webkit-box-shadow: 0 0.09375rem 0.09375rem 0 rgba(0, 0, 0, .08);
+                    box-shadow: 0 0.09375rem 0.09375rem 0 rgba(0, 0, 0, .08);
+                    color: #292929;
+                    padding: 13px 25px;
+                    text-align: center;
+                    display: inline-block;
+                    margin-top: 50px;
+
+                    /* overwriting grid */
+                    a {
+                        display: flex !important;
+                    }
+                }
+            }
+
+
+
+
+        }
+
+
+    }
+
+
+}
