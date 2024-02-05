@@ -1,0 +1,1460 @@
+@charset "UTF-8";
+/* Import mixins from the "sass/mixins" file */
+/* Sass mixin for handling responsive breakpoints */
+/*-------------------------------------------*\ 
+Global styling
+\*-------------------------------------------*/
+/* Apply a style reset to remove default padding and margins, and set box-sizing to border-box for all elements */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+/* Set the base font size for the document to 10px (62.5% of default 16px) */
+html {
+  font-size: 62.5% !important; }
+
+/* Set the font family, font size, and text color for the body element */
+body {
+  font-family: Speedee, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+  font-size: 1.6rem;
+  color: #292929; }
+
+/* Set max-width and center elements for desktop navigation, main content, and footer */
+.desktop-nav,
+main,
+footer {
+  max-width: 1194px;
+  margin: auto;
+  /* Responsive - tablet landscape and above */
+  /* Check for tablet portrait breakpoint (768px) */
+  /* Check for tablet landscape breakpoint (1024px) */
+  /* Check for tablet max landscape breakpoint (1024px) */
+  /* Check for small desktop breakpoint (1280px) */ }
+  @media only screen and (min-width: 64em) {
+    .desktop-nav,
+    main,
+    footer {
+      max-width: 1170px; } }
+
+/* Apply a margin of 12px to the elements with the "container" class */
+.container {
+  margin: 12px;
+  /* Responsive - tablet landscape and above */
+  /* Check for tablet portrait breakpoint (768px) */
+  /* Check for tablet landscape breakpoint (1024px) */
+  /* Check for tablet max landscape breakpoint (1024px) */
+  /* Check for small desktop breakpoint (1280px) */ }
+  @media only screen and (min-width: 80em) {
+    .container {
+      margin: 0; } }
+
+/* Make images responsive by setting the width to 100% and height to auto */
+img {
+  width: 100%;
+  height: auto; }
+
+/* Remove list styles */
+ul {
+  list-style-type: none; }
+
+/* Add letter-spacing to paragraphs */
+p {
+  letter-spacing: .15px; }
+
+/* Style links */
+a {
+  color: #006bae;
+  text-decoration: none; }
+
+/* Remove focus outline for input elements */
+input:focus {
+  outline: none; }
+
+/* Create a class to set full width */
+.full-width {
+  width: 100%; }
+
+/* Import mixins from the "sass/mixins" file */
+/* Sass mixin for handling responsive breakpoints */
+/*-------------------------------------------*\
+Headers global typography
+\*-------------------------------------------*/
+/* Heading 2 styles */
+.h2-header {
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 3.2rem;
+  /* Check for tablet portrait breakpoint (768px) */
+  /* Check for tablet landscape breakpoint (1024px) */
+  /* Check for tablet max landscape breakpoint (1024px) */
+  /* Check for small desktop breakpoint (1280px) */ }
+  @media only screen and (min-width: 64em) {
+    .h2-header {
+      font-size: 3.6rem;
+      line-height: 4rem; } }
+
+/* Heading 3 styles */
+.h3-header {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  /* Check for tablet portrait breakpoint (768px) */
+  /* Check for tablet landscape breakpoint (1024px) */
+  /* Check for tablet max landscape breakpoint (1024px) */
+  /* Check for small desktop breakpoint (1280px) */ }
+  @media only screen and (min-width: 64em) {
+    .h3-header {
+      font-size: 2.4rem;
+      line-height: 2.6rem; } }
+
+/* Heading 3 in paragraph styles */
+.h3-paragraph {
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  /* Check for tablet portrait breakpoint (768px) */
+  /* Check for tablet landscape breakpoint (1024px) */
+  /* Check for tablet max landscape breakpoint (1024px) */
+  /* Check for small desktop breakpoint (1280px) */ }
+  @media only screen and (min-width: 64em) {
+    .h3-paragraph {
+      font-size: 1.6rem;
+      line-height: 2.4rem; } }
+
+/*-------------------------------------------*\
+Nav typography
+\*-------------------------------------------*/
+/* - navigation links in the desktop navigation */
+/*-------------------------------------------*\
+Jobs section typography
+\*-------------------------------------------*/
+/* Contact form header in the Jobs section */
+/*-------------------------------------------*\
+Carousel section typography
+\*-------------------------------------------*/
+/*-------------------------------------------*\
+Footer section typography
+\*-------------------------------------------*/
+/* "policy" navigation links in the footer */
+/* Import mixins from the "sass/mixins" file */
+/* Sass mixin for handling responsive breakpoints */
+/*-------------------------------------------*\
+App section
+\*-------------------------------------------*/
+.app-section {
+  margin-top: 100px;
+  /* app offer container */
+  /*-------------------------------------------*\
+    App rewards 
+    \*-------------------------------------------*/
+  /* app offer container */ }
+  .app-section__offer {
+    padding-bottom: 60px;
+    /* Check for tablet portrait breakpoint (768px) */
+    /* Check for tablet landscape breakpoint (1024px) */
+    /* Check for tablet max landscape breakpoint (1024px) */
+    /* Check for small desktop breakpoint (1280px) */
+    /* app offer image */
+    /* app offer content */ }
+    @media only screen and (min-width: 64em) {
+      .app-section__offer {
+        padding-bottom: 0;
+        display: flex; } }
+    .app-section__offer--image {
+      display: block;
+      margin-bottom: 75px;
+      /* Check for tablet portrait breakpoint (768px) */
+      /* Check for tablet landscape breakpoint (1024px) */
+      /* Check for tablet max landscape breakpoint (1024px) */
+      /* Check for small desktop breakpoint (1280px) */ }
+      @media only screen and (min-width: 80em) {
+        .app-section__offer--image {
+          margin-bottom: 10px; } }
+    .app-section__offer--content {
+      padding: 0 10px;
+      /* Check for tablet portrait breakpoint (768px) */
+      /* Check for tablet landscape breakpoint (1024px) */
+      /* Check for tablet max landscape breakpoint (1024px) */
+      /* Check for small desktop breakpoint (1280px) */
+      /* Paragraphs within the app offer content */ }
+      @media only screen and (min-width: 64em) {
+        .app-section__offer--content {
+          padding: 10px 30px; } }
+      .app-section__offer--content p {
+        margin: 12px 0 32px;
+        /* Check for tablet portrait breakpoint (768px) */
+        /* Check for tablet landscape breakpoint (1024px) */
+        /* Check for tablet max landscape breakpoint (1024px) */
+        /* Check for small desktop breakpoint (1280px) */
+        /* Check for tablet portrait breakpoint (768px) */
+        /* Check for tablet landscape breakpoint (1024px) */
+        /* Check for tablet max landscape breakpoint (1024px) */
+        /* Check for small desktop breakpoint (1280px) */ }
+        @media only screen and (min-width: 64em) {
+          .app-section__offer--content p {
+            padding: 20px 0; } }
+        @media only screen and (min-width: 80em) {
+          .app-section__offer--content p {
+            padding: 10px 0; } }
+  .app-section__rewards {
+    /* Responsive - tablet portrait and above */
+    /* Check for tablet portrait breakpoint (768px) */
+    /* Check for tablet landscape breakpoint (1024px) */
+    /* Check for tablet max landscape breakpoint (1024px) */
+    /* Check for small desktop breakpoint (1280px) */
+    /* Check for tablet portrait breakpoint (768px) */
+    /* Check for tablet landscape breakpoint (1024px) */
+    /* Check for tablet max landscape breakpoint (1024px) */
+    /* Check for small desktop breakpoint (1280px) */
+    padding-bottom: 50px;
+    /* app rewards title */
+    /* app prize */ }
+    @media only screen and (min-width: 48em) {
+      .app-section__rewards {
+        padding: 12px; } }
+    @media only screen and (min-width: 64em) {
+      .app-section__rewards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px; } }
+    .app-section__rewards--title {
+      padding: 50px 0 100px;
+      /* Check for tablet portrait breakpoint (768px) */
+      /* Check for tablet landscape breakpoint (1024px) */
+      /* Check for tablet max landscape breakpoint (1024px) */
+      /* Check for small desktop breakpoint (1280px) */
+      /* Check for tablet portrait breakpoint (768px) */
+      /* Check for tablet landscape breakpoint (1024px) */
+      /* Check for tablet max landscape breakpoint (1024px) */
+      /* Check for small desktop breakpoint (1280px) */ }
+      @media only screen and (min-width: 64em) {
+        .app-section__rewards--title {
+          grid-column: 1 / 3; } }
+      @media only screen and (min-width: 80em) {
+        .app-section__rewards--title {
+          padding: 30px 0 50px; } }
+    .app-section__rewards--prize {
+      padding-bottom: 60px;
+      /* Check for tablet portrait breakpoint (768px) */
+      /* Check for tablet landscape breakpoint (1024px) */
+      /* Check for tablet max landscape breakpoint (1024px) */
+      /* Check for small desktop breakpoint (1280px) */ }
+      @media only screen and (min-width: 64em) {
+        .app-section__rewards--prize {
+          padding-bottom: 10px; } }
+      .app-section__rewards--prize-image {
+        display: block;
+        padding-bottom: 10px; }
+
+/*-------------------------------------------*\
+Food menu section
+\*-------------------------------------------*/
+.food-menu-section {
+  /* Check for tablet portrait breakpoint (768px) */
+  /* Check for tablet landscape breakpoint (1024px) */
+  /* Check for tablet max landscape breakpoint (1024px) */
+  /* Check for small desktop breakpoint (1280px) */
+  /* Check for tablet portrait breakpoint (768px) */
+  /* Check for tablet landscape breakpoint (1024px) */
+  /* Check for tablet max landscape breakpoint (1024px) */
+  /* Check for small desktop breakpoint (1280px) */
+  /* food menu item container */ }
+  @media only screen and (min-width: 64em) {
+    .food-menu-section {
+      margin-top: 100px;
+      margin-bottom: 130px; } }
+  @media only screen and (min-width: 80em) {
+    .food-menu-section {
+      margin-bottom: 50px; } }
+  .food-menu-section__item {
+    margin-bottom: 60px;
+    /* Check for tablet portrait breakpoint (768px) */
+    /* Check for tablet landscape breakpoint (1024px) */
+    /* Check for tablet max landscape breakpoint (1024px) */
+    /* Check for small desktop breakpoint (1280px) */
+    /* food menu image */
+    /* food menu content */ }
+    @media only screen and (min-width: 64em) {
+      .food-menu-section__item {
+        display: flex;
+        gap: 15px;
+        /* Flip the alignment of odd items in the grid */ }
+        .food-menu-section__item:nth-child(1), .food-menu-section__item:nth-child(3), .food-menu-section__item:nth-child(5) {
+          flex-direction: row-reverse; } }
+    .food-menu-section__item--image {
+      display: block;
+      padding-bottom: 70px;
+      /* Check for tablet portrait breakpoint (768px) */
+      /* Check for tablet landscape breakpoint (1024px) */
+      /* Check for tablet max landscape breakpoint (1024px) */
+      /* Check for small desktop breakpoint (1280px) */ }
+      @media only screen and (min-width: 64em) {
+        .food-menu-section__item--image {
+          width: 66.5%;
+          padding: 0 10px 30px; }
+          .food-menu-section__item--image img {
+            min-width: 636px;
+            min-height: 283px;
+            object-fit: cover; } }
+    .food-menu-section__item--content {
+      padding: 0 10px 50px;
+      /* Check for tablet portrait breakpoint (768px) */
+      /* Check for tablet landscape breakpoint (1024px) */
+      /* Check for tablet max landscape breakpoint (1024px) */
+      /* Check for small desktop breakpoint (1280px) */
+      /* paragraphs within the food menu content */ }
+      @media only screen and (min-width: 64em) {
+        .food-menu-section__item--content {
+          width: 33.5%;
+          padding: 10px; } }
+      .food-menu-section__item--content p {
+        padding: 20px 0 30px;
+        /* Check for tablet portrait breakpoint (768px) */
+        /* Check for tablet landscape breakpoint (1024px) */
+        /* Check for tablet max landscape breakpoint (1024px) */
+        /* Check for small desktop breakpoint (1280px) */
+        /* Check for tablet portrait breakpoint (768px) */
+        /* Check for tablet landscape breakpoint (1024px) */
+        /* Check for tablet max landscape breakpoint (1024px) */
+        /* Check for small desktop breakpoint (1280px) */ }
+        @media only screen and (min-width: 64em) {
+          .food-menu-section__item--content p {
+            padding: 35px 0 50px; } }
+        @media only screen and (min-width: 80em) {
+          .food-menu-section__item--content p {
+            padding: 25px 0 50px; } }
+
+/*-------------------------------------------*\
+Mcdonald news section
+\*-------------------------------------------*/
+.news-section .row {
+  /* Check for tablet portrait breakpoint (768px) */
+  /* Check for tablet landscape breakpoint (1024px) */
+  /* Check for tablet max landscape breakpoint (1024px) */
+  /* Check for small desktop breakpoint (1280px) */
+  /* Mcdonald news section item */ }
+  @media only screen and (min-width: 64em) {
+    .news-section .row {
+      display: flex;
+      margin: 0 -10px; } }
+  .news-section .row .news-section__item {
+    padding-bottom: 30px;
+    /* Check for tablet portrait breakpoint (768px) */
+    /* Check for tablet landscape breakpoint (1024px) */
+    /* Check for tablet max landscape breakpoint (1024px) */
+    /* Check for small desktop breakpoint (1280px) */
+    /* Mcdonald news item image */
+    /* Mcdonald news item content */ }
+    @media only screen and (min-width: 64em) {
+      .news-section .row .news-section__item {
+        display: flex;
+        flex-direction: column;
+        margin: 0 12px; } }
+    .news-section .row .news-section__item--image {
+      display: block;
+      margin-bottom: 45px;
+      /* Check for tablet portrait breakpoint (768px) */
+      /* Check for tablet landscape breakpoint (1024px) */
+      /* Check for tablet max landscape breakpoint (1024px) */
+      /* Check for small desktop breakpoint (1280px) */ }
+      @media only screen and (min-width: 64em) {
+        .news-section .row .news-section__item--image {
+          margin-bottom: 40px; } }
+    .news-section .row .news-section__item--content {
+      padding: 0 10px 50px;
+      /* Check for tablet portrait breakpoint (768px) */
+      /* Check for tablet landscape breakpoint (1024px) */
+      /* Check for tablet max landscape breakpoint (1024px) */
+      /* Check for small desktop breakpoint (1280px) */
+      /* paragraphs within the Mcdonald news item content */ }
+      @media only screen and (min-width: 64em) {
+        .news-section .row .news-section__item--content {
+          padding: 0; } }
+      .news-section .row .news-section__item--content p {
+        margin: 15px 0 20px;
+        /* Check for tablet portrait breakpoint (768px) */
+        /* Check for tablet landscape breakpoint (1024px) */
+        /* Check for tablet max landscape breakpoint (1024px) */
+        /* Check for small desktop breakpoint (1280px) */ }
+        @media only screen and (min-width: 64em) {
+          .news-section .row .news-section__item--content p {
+            margin: 25px 0 35px; } }
+
+/* Mcdonald news section row1 */
+.news-section .row1 .news-section__item {
+  /* Check for tablet portrait breakpoint (768px) */
+  /* Check for tablet landscape breakpoint (1024px) */
+  /* Check for tablet max landscape breakpoint (1024px) */
+  /* Check for small desktop breakpoint (1280px) */ }
+  @media only screen and (min-width: 64em) {
+    .news-section .row1 .news-section__item {
+      width: 50%; } }
+  .news-section .row1 .news-section__item--image {
+    /* Check for tablet portrait breakpoint (768px) */
+    /* Check for tablet landscape breakpoint (1024px) */
+    /* Check for tablet max landscape breakpoint (1024px) */
+    /* Check for small desktop breakpoint (1280px) */ }
+    @media only screen and (min-width: 64em) {
+      .news-section .row1 .news-section__item--image {
+        min-width: 488px;
+        min-height: 188px;
+        object-fit: cover; } }
+
+/* Mcdonald news section row2 */
+.news-section .row2 .news-section__item {
+  margin-top: 100px;
+  /* Check for tablet portrait breakpoint (768px) */
+  /* Check for tablet landscape breakpoint (1024px) */
+  /* Check for tablet max landscape breakpoint (1024px) */
+  /* Check for small desktop breakpoint (1280px) */ }
+  @media only screen and (min-width: 64em) {
+    .news-section .row2 .news-section__item {
+      width: 50%; } }
+
+/* Mcdonald news section row3 */
+.news-section .row3 .news-section__item--image {
+  margin-bottom: 5px;
+  /* Check for tablet portrait breakpoint (768px) */
+  /* Check for tablet landscape breakpoint (1024px) */
+  /* Check for tablet max landscape breakpoint (1024px) */
+  /* Check for small desktop breakpoint (1280px) */ }
+  @media only screen and (min-width: 64em) {
+    .news-section .row3 .news-section__item--image {
+      margin-bottom: 15px; } }
+
+/* Mcdonald news section row4 */
+.news-section .row4 {
+  margin-top: 50px;
+  /* Check for tablet portrait breakpoint (768px) */
+  /* Check for tablet landscape breakpoint (1024px) */
+  /* Check for tablet max landscape breakpoint (1024px) */
+  /* Check for small desktop breakpoint (1280px) */ }
+  @media only screen and (min-width: 80em) {
+    .news-section .row4 {
+      margin-top: 100px; } }
+  .news-section .row4 .news-section__item {
+    /* Check for tablet portrait breakpoint (768px) */
+    /* Check for tablet landscape breakpoint (1024px) */
+    /* Check for tablet max landscape breakpoint (1024px) */
+    /* Check for small desktop breakpoint (1280px) */ }
+    @media only screen and (min-width: 64em) {
+      .news-section .row4 .news-section__item {
+        width: 33%; } }
+    .news-section .row4 .news-section__item--image {
+      /* Check for tablet portrait breakpoint (768px) */
+      /* Check for tablet landscape breakpoint (1024px) */
+      /* Check for tablet max landscape breakpoint (1024px) */
+      /* Check for small desktop breakpoint (1280px) */
+      /* Check for tablet portrait breakpoint (768px) */
+      /* Check for tablet landscape breakpoint (1024px) */
+      /* Check for tablet max landscape breakpoint (1024px) */
+      /* Check for small desktop breakpoint (1280px) */ }
+      @media only screen and (min-width: 64em) {
+        .news-section .row4 .news-section__item--image {
+          min-width: 317px;
+          max-height: 211px;
+          overflow: hidden;
+          object-fit: cover; } }
+      @media only screen and (min-width: 80em) {
+        .news-section .row4 .news-section__item--image {
+          max-height: 249px; } }
+
+/* Mcdonald news section row5 */
+.news-section .row5 {
+  margin: 60px 0;
+  /* Check for tablet portrait breakpoint (768px) */
+  /* Check for tablet landscape breakpoint (1024px) */
+  /* Check for tablet max landscape breakpoint (1024px) */
+  /* Check for small desktop breakpoint (1280px) */ }
+  @media only screen and (min-width: 64em) {
+    .news-section .row5 {
+      margin: 100px 0; } }
+  .news-section .row5 .news-section__item {
+    /* Check for tablet portrait breakpoint (768px) */
+    /* Check for tablet landscape breakpoint (1024px) */
+    /* Check for tablet max landscape breakpoint (1024px) */
+    /* Check for small desktop breakpoint (1280px) */ }
+    @media only screen and (min-width: 64em) {
+      .news-section .row5 .news-section__item {
+        margin: 0; } }
+    .news-section .row5 .news-section__item--content {
+      margin-top: 10px; }
+
+/*-------------------------------------------*\
+Jobs section
+\*-------------------------------------------*/
+.jobs-section {
+  margin-top: 50px;
+  padding: 0 15px;
+  /* jobs section intro */
+  /* jobs section contact form */
+  /* contact form */ }
+  .jobs-section__intro {
+    /* jobs section links */ }
+    .jobs-section__intro h3 {
+      margin-bottom: 50px; }
+    .jobs-section__intro p {
+      margin-bottom: 10px; }
+    .jobs-section__intro .links {
+      display: flex;
+      gap: 5px; }
+  .jobs-section__contact-form {
+    margin-top: 80px;
+    /* jobs section contact header */ }
+    .jobs-section__contact-form--header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px; }
+      .jobs-section__contact-form--header h2 {
+        font-size: 3.2rem; }
+  .jobs-section .contact-form {
+    /* Responsive - tablet portrait and above */
+    /* Check for tablet portrait breakpoint (768px) */
+    /* Check for tablet landscape breakpoint (1024px) */
+    /* Check for tablet max landscape breakpoint (1024px) */
+    /* Check for small desktop breakpoint (1280px) */
+    /* Check for tablet portrait breakpoint (768px) */
+    /* Check for tablet landscape breakpoint (1024px) */
+    /* Check for tablet max landscape breakpoint (1024px) */
+    /* Check for small desktop breakpoint (1280px) */
+    /* contact form header */
+    /* contact form footer */ }
+    @media only screen and (min-width: 48em) {
+      .jobs-section .contact-form {
+        padding: 0 40px; } }
+    @media only screen and (min-width: 64em) {
+      .jobs-section .contact-form {
+        width: 80%;
+        margin: auto; } }
+    .jobs-section .contact-form__header {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 40px; }
+      .jobs-section .contact-form__header span {
+        margin-bottom: 0;
+        font-size: 1.2rem;
+        color: #6f6f6f;
+        font-family: speedee;
+        font-weight: 300; }
+      .jobs-section .contact-form__header p {
+        font-size: 1.8rem;
+        line-height: 110%;
+        /* Check for tablet portrait breakpoint (768px) */
+        /* Check for tablet landscape breakpoint (1024px) */
+        /* Check for tablet max landscape breakpoint (1024px) */
+        /* Check for small desktop breakpoint (1280px) */ }
+        @media only screen and (min-width: 64em) {
+          .jobs-section .contact-form__header p {
+            font-size: 1.84rem; } }
+    .jobs-section .contact-form__body {
+      /* contact form body */
+      /* contact form checkbox fields */ }
+      .jobs-section .contact-form__body--input-field {
+        /* contact form input fields */ }
+        .jobs-section .contact-form__body--input-field input {
+          font-size: 1.6rem;
+          border: none;
+          border-bottom: 1px solid #9b9191;
+          width: 100%;
+          padding-top: 45px;
+          padding-bottom: 5px; }
+      .jobs-section .contact-form__body--checkbox-field {
+        color: #6f6f6f;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        padding-bottom: 5px;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 15px;
+        /* checkbox icon */ }
+        .jobs-section .contact-form__body--checkbox-field input {
+          width: 20px;
+          height: 20px;
+          appearance: none;
+          border: 2px solid #5a5a5a;
+          border-radius: 3px; }
+        .jobs-section .contact-form__body--checkbox-field input:checked {
+          background-color: #006bae; }
+        .jobs-section .contact-form__body--checkbox-field input:checked::before {
+          font-family: FontAwesome;
+          content: "\f00c";
+          font-weight: 200;
+          color: white;
+          display: inline-block;
+          vertical-align: middle;
+          padding-left: 2px; }
+    .jobs-section .contact-form__footer {
+      margin-bottom: 80px;
+      /* Check for tablet portrait breakpoint (768px) */
+      /* Check for tablet landscape breakpoint (1024px) */
+      /* Check for tablet max landscape breakpoint (1024px) */
+      /* Check for small desktop breakpoint (1280px) */
+      /* contact form footer buttons */
+      /* contact form footer content */ }
+      @media only screen and (min-width: 80em) {
+        .jobs-section .contact-form__footer {
+          margin-bottom: 160px; } }
+      .jobs-section .contact-form__footer--buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px; }
+        .jobs-section .contact-form__footer--buttons .cta-button {
+          font-size: 1.6rem;
+          box-shadow: 0px 1px 4px 0px #666666;
+          padding: 12px 0;
+          margin-bottom: 8px;
+          width: 100%;
+          /* Responsive - tablet portrait and above */
+          /* Check for tablet portrait breakpoint (768px) */
+          /* Check for tablet landscape breakpoint (1024px) */
+          /* Check for tablet max landscape breakpoint (1024px) */
+          /* Check for small desktop breakpoint (1280px) */ }
+          @media only screen and (min-width: 48em) {
+            .jobs-section .contact-form__footer--buttons .cta-button {
+              min-width: 80px !important;
+              width: 110px; } }
+      .jobs-section .contact-form__footer--content {
+        color: #292929; }
+        .jobs-section .contact-form__footer--content p {
+          margin-top: 3px; }
+
+/* jobs section contact form row2 */
+.contact-form .row2 {
+  padding: 45px 0 40px; }
+
+/*-------------------------------------------*\
+Footer
+\*-------------------------------------------*/
+.footer {
+  padding: 0 10px 20px;
+  /* Check for tablet portrait breakpoint (768px) */
+  /* Check for tablet landscape breakpoint (1024px) */
+  /* Check for tablet max landscape breakpoint (1024px) */
+  /* Check for small desktop breakpoint (1280px) */
+  /* Check for tablet portrait breakpoint (768px) */
+  /* Check for tablet landscape breakpoint (1024px) */
+  /* Check for tablet max landscape breakpoint (1024px) */
+  /* Check for small desktop breakpoint (1280px) */
+  /* footer navigation row1 */
+  /* footer social media icons row2 */
+  /* footer policies navigation row3 */
+  /* tab-land-border */ }
+  @media only screen and (min-width: 64em) {
+    .footer {
+      padding-bottom: 180px; } }
+  @media only screen and (min-width: 80em) {
+    .footer {
+      padding-bottom: 100px; } }
+  .footer .row1 {
+    /* Check for tablet portrait breakpoint (768px) */
+    /* Check for tablet landscape breakpoint (1024px) */
+    /* Check for tablet max landscape breakpoint (1024px) */
+    /* Check for small desktop breakpoint (1280px) */ }
+    @media only screen and (min-width: 64em) {
+      .footer .row1 {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr); } }
+    .footer .row1 .footer__nav {
+      /* Check for tablet portrait breakpoint (768px) */
+      /* Check for tablet landscape breakpoint (1024px) */
+      /* Check for tablet max landscape breakpoint (1024px) */
+      /* Check for small desktop breakpoint (1280px) */ }
+      @media only screen and (min-width: 64em) {
+        .footer .row1 .footer__nav {
+          display: flex;
+          padding-bottom: 20px; } }
+  .footer .row2 {
+    /* Check for tablet portrait breakpoint (768px) */
+    /* Check for tablet landscape breakpoint (1024px) */
+    /* Check for tablet max landscape breakpoint (1024px) */
+    /* Check for small desktop breakpoint (1280px) */
+    /* social media container */
+    /* app-store container */ }
+    @media only screen and (min-width: 64em) {
+      .footer .row2 {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 30px; } }
+    .footer .row2 .footer__social-media {
+      margin: 25px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px; }
+      .footer .row2 .footer__social-media--icon {
+        width: 32px;
+        height: 32px; }
+    .footer .row2 .footer__app-store {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      /* Check for tablet portrait breakpoint (768px) */
+      /* Check for tablet landscape breakpoint (1024px) */
+      /* Check for tablet max landscape breakpoint (1024px) */
+      /* Check for small desktop breakpoint (1280px) */ }
+      @media only screen and (min-width: 64em) {
+        .footer .row2 .footer__app-store {
+          gap: 10px; } }
+      .footer .row2 .footer__app-store--logo {
+        width: 132px;
+        height: 43px; }
+  .footer .row3 {
+    /* Check for tablet portrait breakpoint (768px) */
+    /* Check for tablet landscape breakpoint (1024px) */
+    /* Check for tablet max landscape breakpoint (1024px) */
+    /* Check for small desktop breakpoint (1280px) */
+    /* plicy-nav container */
+    /* footer rights container */ }
+    @media only screen and (min-width: 64em) {
+      .footer .row3 {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 10px;
+        margin-top: 50px; } }
+    .footer .row3 .footer__policy-nav {
+      margin-top: 40px;
+      /* Check for tablet portrait breakpoint (768px) */
+      /* Check for tablet landscape breakpoint (1024px) */
+      /* Check for tablet max landscape breakpoint (1024px) */
+      /* Check for small desktop breakpoint (1280px) */
+      /* list */ }
+      @media only screen and (min-width: 64em) {
+        .footer .row3 .footer__policy-nav {
+          width: 65%;
+          margin: 0; } }
+      .footer .row3 .footer__policy-nav ul {
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+        /* Check for tablet portrait breakpoint (768px) */
+        /* Check for tablet landscape breakpoint (1024px) */
+        /* Check for tablet max landscape breakpoint (1024px) */
+        /* Check for small desktop breakpoint (1280px) */ }
+        .footer .row3 .footer__policy-nav ul a {
+          font-size: 1.2rem;
+          text-decoration: none;
+          color: #292929;
+          /* Check for tablet portrait breakpoint (768px) */
+          /* Check for tablet landscape breakpoint (1024px) */
+          /* Check for tablet max landscape breakpoint (1024px) */
+          /* Check for small desktop breakpoint (1280px) */ }
+          @media only screen and (min-width: 64em) {
+            .footer .row3 .footer__policy-nav ul a {
+              font-size: 1.6rem; } }
+        @media only screen and (min-width: 64em) {
+          .footer .row3 .footer__policy-nav ul {
+            justify-content: start;
+            gap: 20px; }
+            .footer .row3 .footer__policy-nav ul .full-width {
+              width: auto; }
+            .footer .row3 .footer__policy-nav ul li {
+              margin-right: 20px; } }
+      .footer .row3 .footer__policy-nav .mobile-border {
+        margin: 0 -10px 10px;
+        /* Check for tablet portrait breakpoint (768px) */
+        /* Check for tablet landscape breakpoint (1024px) */
+        /* Check for tablet max landscape breakpoint (1024px) */
+        /* Check for small desktop breakpoint (1280px) */ }
+        @media only screen and (min-width: 64em) {
+          .footer .row3 .footer__policy-nav .mobile-border {
+            display: none; } }
+    .footer .row3 .footer__rights {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 30px 0 0;
+      /* Check for tablet portrait breakpoint (768px) */
+      /* Check for tablet landscape breakpoint (1024px) */
+      /* Check for tablet max landscape breakpoint (1024px) */
+      /* Check for small desktop breakpoint (1280px) */ }
+      @media only screen and (min-width: 64em) {
+        .footer .row3 .footer__rights {
+          padding: 0;
+          margin: 0;
+          width: 30%;
+          align-items: start;
+          gap: 10px; } }
+      .footer .row3 .footer__rights p {
+        font-size: 1.2rem;
+        /* Check for tablet portrait breakpoint (768px) */
+        /* Check for tablet landscape breakpoint (1024px) */
+        /* Check for tablet max landscape breakpoint (1024px) */
+        /* Check for small desktop breakpoint (1280px) */
+        /* Check for tablet portrait breakpoint (768px) */
+        /* Check for tablet landscape breakpoint (1024px) */
+        /* Check for tablet max landscape breakpoint (1024px) */
+        /* Check for small desktop breakpoint (1280px) */ }
+        @media only screen and (min-width: 64em) {
+          .footer .row3 .footer__rights p {
+            font-size: 1.6rem; } }
+        @media only screen and (min-width: 80em) {
+          .footer .row3 .footer__rights p {
+            padding-left: 30px;
+            font-size: 1.2rem; } }
+      .footer .row3 .footer__rights--logo {
+        width: 28px;
+        height: 28px; }
+  .footer .tab-land-border {
+    visibility: hidden;
+    /* Check for tablet portrait breakpoint (768px) */
+    /* Check for tablet landscape breakpoint (1024px) */
+    /* Check for tablet max landscape breakpoint (1024px) */
+    /* Check for small desktop breakpoint (1280px) */ }
+    @media only screen and (min-width: 64em) {
+      .footer .tab-land-border {
+        visibility: visible;
+        margin: 0 -15px 10px; } }
+
+/* Import mixins from the "sass/mixins" file */
+/* Sass mixin for handling responsive breakpoints */
+/*-------------------------------------------*\
+Top navigation DESKTOP
+\*-------------------------------------------*/
+/* navigation links */
+nav {
+  /* Desktop navigation */ }
+  nav .desktop-nav {
+    display: flex;
+    justify-content: space-between;
+    /* Responsive - tablet landscape and below */
+    /* Check for tablet portrait breakpoint (768px) */
+    /* Check for tablet landscape breakpoint (1024px) */
+    /* Check for tablet max landscape breakpoint (1024px) */
+    /* Check for small desktop breakpoint (1280px) */
+    /* Navigation container */
+    /* Logo styles */
+    /* Navigation links container */
+    /* Secondary navigation links container */
+    /* Primary navigation links container */ }
+    @media only screen and (max-width: 64em) {
+      nav .desktop-nav {
+        display: none; } }
+    nav .desktop-nav__nav {
+      width: 14%; }
+    nav .desktop-nav__logo {
+      padding-top: 20px; }
+    nav .desktop-nav__links {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 86%;
+      /* Navigation links list */
+      /* Individual list item styles */
+      /* Primary navigation links anchor styles */ }
+      nav .desktop-nav__links ul {
+        display: flex; }
+      nav .desktop-nav__links li {
+        padding-right: 25px; }
+      nav .desktop-nav__links a {
+        color: #292929;
+        font-size: 1.4rem; }
+    nav .desktop-nav__links--secondary {
+      display: flex;
+      justify-content: space-between;
+      /* Left side of secondary links */
+      /* Right side of secondary links */ }
+      nav .desktop-nav__links--secondary__left-side ul {
+        min-height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+      nav .desktop-nav__links--secondary__right-side {
+        padding-right: 10px;
+        /* Navigation search button */ }
+        nav .desktop-nav__links--secondary__right-side ul {
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+        nav .desktop-nav__links--secondary__right-side .cta-button {
+          padding: 10px 15px; }
+        nav .desktop-nav__links--secondary__right-side .nav-search-button:before {
+          content: "\f002";
+          font-family: FontAwesome;
+          font-size: 1.7rem;
+          color: gray;
+          padding-right: 5px; }
+    nav .desktop-nav__links--primary {
+      padding-bottom: 10px;
+      /* Navigation "Menu" drop button */
+      /* the dropdown menu content */ }
+      nav .desktop-nav__links--primary .menu-dropdown-button {
+        border: none;
+        background-color: transparent;
+        color: inherit;
+        font-size: 1.6rem;
+        cursor: pointer;
+        /* Add the transition property for smooth fa-chevron-down icon rotation */ }
+        nav .desktop-nav__links--primary .menu-dropdown-button .rotate-icon {
+          transition: transform 0.3s ease; }
+      nav .desktop-nav__links--primary .menu-dropdown-content {
+        display: none;
+        position: absolute;
+        left: 0;
+        margin-top: 30px;
+        height: 700px;
+        width: 100%;
+        z-index: 1;
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        border-radius: 5px;
+        background-color: white;
+        text-align: center;
+        /* Grid layout for dropdown menu items */
+        /* dropdown menu item links */
+        /* View full menu button styles */ }
+        nav .desktop-nav__links--primary .menu-dropdown-content ul {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          max-width: 1020px;
+          margin: auto;
+          padding-top: 50px; }
+        nav .desktop-nav__links--primary .menu-dropdown-content a {
+          display: grid;
+          grid-template-columns: 78px auto;
+          align-items: center;
+          gap: 10px;
+          text-align: left; }
+        nav .desktop-nav__links--primary .menu-dropdown-content .view-full-menu-button {
+          max-width: 1020px;
+          background: #fff;
+          border: 1px solid #adadad;
+          border-radius: 0.25rem;
+          -webkit-box-shadow: 0 0.09375rem 0.09375rem 0 rgba(0, 0, 0, 0.08);
+          box-shadow: 0 0.09375rem 0.09375rem 0 rgba(0, 0, 0, 0.08);
+          color: #292929;
+          padding: 13px 25px;
+          text-align: center;
+          display: inline-block;
+          margin-top: 50px;
+          /* overwriting grid */ }
+          nav .desktop-nav__links--primary .menu-dropdown-content .view-full-menu-button a {
+            display: flex !important; }
+
+/* Import mixins from the "sass/mixins" file */
+/* Sass mixin for handling responsive breakpoints */
+/*-------------------------------------------*\
+Top navigation MOBILE
+\*-------------------------------------------*/
+/* navigation links */
+nav {
+  margin-bottom: 20px;
+  padding-bottom: 30px;
+  /* Mobile navigation */ }
+  nav .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    /* First row of the mobile navigation menu */
+    /* Second row of the mobile navigation menu */ }
+    nav .mobile-nav .row1 {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      /* Logo styles */
+      /* Toggle button container for the mobile navigation menu icon */ }
+      nav .mobile-nav .row1 .mobile-nav__logo {
+        z-index: 999;
+        /* Logo image */ }
+        nav .mobile-nav .row1 .mobile-nav__logo img {
+          width: 48px;
+          height: 48px; }
+      nav .mobile-nav .row1 .mobile-nav__menu-icon {
+        width: 100%;
+        display: flex;
+        justify-content: space-between; }
+    nav .mobile-nav .row2 {
+      /* horizontal lines */
+      /* Mobile navigation links container */ }
+      nav .mobile-nav .row2 hr {
+        border: 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.1); }
+      nav .mobile-nav .row2 .mobile-nav__links {
+        display: none;
+        padding: 40px 13px 0 65px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: white;
+        z-index: 99;
+        width: 100%;
+        height: fit-content;
+        /* List items in the mobile navigation */
+        /* Main menu container in the mobile navigation */
+        /* Search menu container in the mobile navigation */ }
+        nav .mobile-nav .row2 .mobile-nav__links li {
+          margin: 30px 0 22px 0; }
+        nav .mobile-nav .row2 .mobile-nav__links--main-menu {
+          /* Button Menu */
+          /* Drop down menu container*/ }
+          nav .mobile-nav .row2 .mobile-nav__links--main-menu .mobile-menu-dropdown-button {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* Default button toggle icon (+) */
+            /* Button toggle icon when the menu is open (-) */ }
+            nav .mobile-nav .row2 .mobile-nav__links--main-menu .mobile-menu-dropdown-button::after {
+              /* Default content for Font Awesome icon */
+              content: var(--button-content, "");
+              /* Set the font family for Font Awesome */
+              font-family: FontAwesome;
+              float: right;
+              margin-left: 5px;
+              padding: 0;
+              margin: 0;
+              font-size: 2rem;
+              color: #60605b; }
+            nav .mobile-nav .row2 .mobile-nav__links--main-menu .mobile-menu-dropdown-button[data-toggle="open"]::after {
+              /* Font Awesome icon for the opened menu */
+              content: "\f068"; }
+          nav .mobile-nav .row2 .mobile-nav__links--main-menu .mobile-menu-dropdown-content {
+            /* List items in the drop-down menu container */
+            /* Links in the drop-down menu */
+            /* Food images in the drop-down menu */ }
+            nav .mobile-nav .row2 .mobile-nav__links--main-menu .mobile-menu-dropdown-content li {
+              margin: 0; }
+            nav .mobile-nav .row2 .mobile-nav__links--main-menu .mobile-menu-dropdown-content a {
+              display: flex;
+              align-items: center;
+              justify-content: flex-start;
+              gap: 20px;
+              font-size: 1.4rem; }
+            nav .mobile-nav .row2 .mobile-nav__links--main-menu .mobile-menu-dropdown-content figure {
+              height: 60px;
+              width: 60px; }
+        nav .mobile-nav .row2 .mobile-nav__links--search-menu {
+          /*  Mobile navigation search button */ }
+          nav .mobile-nav .row2 .mobile-nav__links--search-menu .mobile-nav-search-button {
+            width: 100%;
+            display: flex;
+            justify-content: space-between; }
+
+/* Import mixins from the "sass/mixins" file */
+/* Sass mixin for handling responsive breakpoints */
+/*-------------------------------------------*\ 
+Buttons global css
+\*-------------------------------------------*/
+/* CTA Button Styles */
+.cta-button {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  background-color: #ffbc0d;
+  border-radius: 4px;
+  padding: 14px 20px;
+  text-align: center;
+  display: inline-block;
+  align-items: center;
+  border: none;
+  color: #292929;
+  text-decoration: none;
+  min-width: 180px;
+  /* Responsive - tablet portrait and above */
+  /* Check for tablet portrait breakpoint (768px) */
+  /* Check for tablet landscape breakpoint (1024px) */
+  /* Check for tablet max landscape breakpoint (1024px) */
+  /* Check for small desktop breakpoint (1280px) */ }
+  @media only screen and (min-width: 48em) {
+    .cta-button {
+      font-size: 1.6rem; } }
+
+/* News section CTA button */
+.news-section .cta-button {
+  min-width: 140px; }
+
+/* Contact form footer CTA button */
+/* Mobile Navigation */
+nav .mobile-nav {
+  /* Responsive - tablet ladscape and above */
+  /* Check for tablet portrait breakpoint (768px) */
+  /* Check for tablet landscape breakpoint (1024px) */
+  /* Check for tablet max landscape breakpoint (1024px) */
+  /* Check for small desktop breakpoint (1280px) */ }
+  @media only screen and (min-width: 64em) {
+    nav .mobile-nav {
+      display: none; } }
+  nav .mobile-nav .row1 {
+    /* Burger button */
+    /* X button to close the mobile menu */ }
+    nav .mobile-nav .row1 .cta-button {
+      min-width: 75pt;
+      height: 36px;
+      padding: 8px 9pt;
+      line-height: 2rem;
+      margin-right: 10px; }
+    nav .mobile-nav .row1 .menu-icon {
+      background-color: transparent;
+      padding: 0 5px;
+      border: none;
+      font-size: 2.4rem;
+      color: #333333; }
+    nav .mobile-nav .row1 .menu-icon-close {
+      display: none;
+      background-color: transparent;
+      padding: 0 5px;
+      border: none;
+      font-size: 2.4rem;
+      color: #333333;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      z-index: 999; }
+  nav .mobile-nav .row2 .mobile-nav__links {
+    /* nav links to color black */ }
+    nav .mobile-nav .row2 .mobile-nav__links a {
+      color: inherit; }
+    nav .mobile-nav .row2 .mobile-nav__links--top-menu {
+      font-size: 1.4rem; }
+    nav .mobile-nav .row2 .mobile-nav__links--main-menu {
+      /* menu button */ }
+      nav .mobile-nav .row2 .mobile-nav__links--main-menu .mobile-menu-dropdown-button {
+        background-color: transparent;
+        color: inherit;
+        border: none;
+        font-size: inherit; }
+      nav .mobile-nav .row2 .mobile-nav__links--main-menu .view-full-menu-button {
+        min-width: 192px;
+        margin-bottom: 35px; }
+        nav .mobile-nav .row2 .mobile-nav__links--main-menu .view-full-menu-button a {
+          justify-content: center; }
+    nav .mobile-nav .row2 .mobile-nav__links--search-menu {
+      font-size: 1.4rem;
+      /*magnifying glass icon*/ }
+      nav .mobile-nav .row2 .mobile-nav__links--search-menu i {
+        font-size: 1.7rem;
+        color: #60605b; }
+
+nav {
+  /* Navigation search button */
+  /* Navigation "Menu" drop button */
+  /* View full menu button styles */ }
+  nav .desktop-nav__links--secondary__right-side .cta-button {
+    padding: 10px 15px; }
+  nav .nav-search-button:before {
+    content: attr(data-toggle);
+    font-family: 'Your-Icon-Font';
+    font-size: 1.7rem;
+    color: gray;
+    padding-right: 5px; }
+  nav .menu-dropdown-button {
+    border: none;
+    background-color: transparent;
+    color: inherit;
+    font-size: 1.6rem;
+    cursor: pointer;
+    /* Add the transition property for smooth fa-chevron-down icon rotation */ }
+    nav .menu-dropdown-button .rotate-icon {
+      transition: transform 0.3s ease; }
+  nav .view-full-menu-button {
+    max-width: 1020px;
+    background: #fff;
+    border: 1px solid #adadad;
+    border-radius: 0.25rem;
+    -webkit-box-shadow: 0 0.09375rem 0.09375rem 0 rgba(0, 0, 0, 0.08);
+    box-shadow: 0 0.09375rem 0.09375rem 0 rgba(0, 0, 0, 0.08);
+    color: #292929;
+    padding: 13px 25px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 50px;
+    /* overwriting grid */ }
+    nav .view-full-menu-button a {
+      display: flex !important; }
+
+/* Import mixins from the "sass/mixins" file */
+/* Sass mixin for handling responsive breakpoints */
+/*-------------------------------------------*\ 
+Accordion CSS
+\*-------------------------------------------*/
+/* accordion container */
+.accordion {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  /* Responsive - tablet landscape and above */
+  /* Check for tablet portrait breakpoint (768px) */
+  /* Check for tablet landscape breakpoint (1024px) */
+  /* Check for tablet max landscape breakpoint (1024px) */
+  /* Check for small desktop breakpoint (1280px) */
+  /* accordion toggle icon */
+  /* accordion header */ }
+  @media only screen and (min-width: 64em) {
+    .accordion {
+      justify-content: start;
+      margin-bottom: 20px; } }
+  .accordion::before {
+    content: "+";
+    float: right;
+    margin-left: 5px;
+    padding: 0;
+    margin: 0;
+    font-size: 3.6rem;
+    /* Hide the toggle icon for tablet landscape and above */
+    /* Check for tablet portrait breakpoint (768px) */
+    /* Check for tablet landscape breakpoint (1024px) */
+    /* Check for tablet max landscape breakpoint (1024px) */
+    /* Check for small desktop breakpoint (1280px) */ }
+    @media only screen and (min-width: 64em) {
+      .accordion::before {
+        display: none; } }
+  .accordion .h4-header {
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 2.2rem;
+    color: #292929;
+    /* Responsive - tablet portrait and above */
+    /* Check for tablet portrait breakpoint (768px) */
+    /* Check for tablet landscape breakpoint (1024px) */
+    /* Check for tablet max landscape breakpoint (1024px) */
+    /* Check for small desktop breakpoint (1280px) */
+    /* Responsive - tablet landscape and above */
+    /* Check for tablet portrait breakpoint (768px) */
+    /* Check for tablet landscape breakpoint (1024px) */
+    /* Check for tablet max landscape breakpoint (1024px) */
+    /* Check for small desktop breakpoint (1280px) */ }
+    @media only screen and (min-width: 48em) {
+      .accordion .h4-header {
+        font-size: 1.6rem; } }
+    @media only screen and (min-width: 64em) {
+      .accordion .h4-header {
+        font-weight: 700; } }
+
+/* active accordion (minus favicon) */
+.active::before {
+  content: "-";
+  /* Hide the toggle icon for tablet landscape and above */
+  /* Check for tablet portrait breakpoint (768px) */
+  /* Check for tablet landscape breakpoint (1024px) */
+  /* Check for tablet max landscape breakpoint (1024px) */
+  /* Check for small desktop breakpoint (1280px) */ }
+  @media only screen and (min-width: 64em) {
+    .active::before {
+      display: none; } }
+
+/* accordion panel */
+.panel {
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  list-style-type: none;
+  /* Responsive - tablet landscape and above */
+  /* Check for tablet portrait breakpoint (768px) */
+  /* Check for tablet landscape breakpoint (1024px) */
+  /* Check for tablet max landscape breakpoint (1024px) */
+  /* Check for small desktop breakpoint (1280px) */
+  /* accordion panel li */
+  /* links within the accordion panel */ }
+  @media only screen and (min-width: 64em) {
+    .panel {
+      max-height: 100%; } }
+  .panel li {
+    font-size: 1.4rem;
+    margin: 12px 0;
+    padding-bottom: 9px;
+    /* Responsive - tablet portrait and above */
+    /* Check for tablet portrait breakpoint (768px) */
+    /* Check for tablet landscape breakpoint (1024px) */
+    /* Check for tablet max landscape breakpoint (1024px) */
+    /* Check for small desktop breakpoint (1280px) */
+    /* Responsive - tablet landscape and above */
+    /* Check for tablet portrait breakpoint (768px) */
+    /* Check for tablet landscape breakpoint (1024px) */
+    /* Check for tablet max landscape breakpoint (1024px) */
+    /* Check for small desktop breakpoint (1280px) */ }
+    @media only screen and (min-width: 48em) {
+      .panel li {
+        font-size: 1.6rem; } }
+    @media only screen and (min-width: 64em) {
+      .panel li {
+        margin: 0; } }
+  .panel a {
+    text-decoration: none;
+    color: #292929; }
+
+/* Import mixins from the "sass/mixins" file */
+/* Sass mixin for handling responsive breakpoints */
+/*-------------------------------------------*\ 
+Carousel CSS
+\*-------------------------------------------*/
+/* carousel container */
+.carousel {
+  position: relative;
+  max-width: 1170px;
+  border: solid 1px #cecece;
+  border-radius: 5px;
+  /* Carousel images */
+  /* Active carousel slide */
+  /* Carousel content box */
+  /* Carousel navigation */ }
+  .carousel-image {
+    width: 100%;
+    height: auto;
+    display: none; }
+  .carousel .carousel-active {
+    display: block; }
+  .carousel-content-box {
+    background-color: white;
+    width: 100%;
+    padding: 20px 20px 0;
+    display: none;
+    /* heading in carousel content box */
+    /* paragraphs in carousel content box */
+    /* Responsive - tablet landscape and above */
+    /* Check for tablet portrait breakpoint (768px) */
+    /* Check for tablet landscape breakpoint (1024px) */
+    /* Check for tablet max landscape breakpoint (1024px) */
+    /* Check for small desktop breakpoint (1280px) */
+    /* buttons in carousel content box */ }
+    .carousel-content-box h3 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      line-height: 3rem;
+      margin-bottom: 25px;
+      /* Responsive - tablet landscape and above */
+      /* Check for tablet portrait breakpoint (768px) */
+      /* Check for tablet landscape breakpoint (1024px) */
+      /* Check for tablet max landscape breakpoint (1024px) */
+      /* Check for small desktop breakpoint (1280px) */ }
+      @media only screen and (min-width: 64em) {
+        .carousel-content-box h3 {
+          font-size: 3.4rem;
+          padding: 0 20px 0 0;
+          line-height: 4rem; } }
+    .carousel-content-box p {
+      font-size: 1.4rem;
+      font-weight: 400;
+      line-height: 2.2rem;
+      margin-bottom: 20px;
+      color: black;
+      letter-spacing: -0.15px;
+      /* Responsive - tablet landscape and above */
+      /* Check for tablet portrait breakpoint (768px) */
+      /* Check for tablet landscape breakpoint (1024px) */
+      /* Check for tablet max landscape breakpoint (1024px) */
+      /* Check for small desktop breakpoint (1280px) */ }
+      @media only screen and (min-width: 64em) {
+        .carousel-content-box p {
+          font-size: 1.6rem;
+          padding: 0 20px 0 0;
+          line-height: 2.4rem; } }
+    @media only screen and (min-width: 64em) {
+      .carousel-content-box {
+        position: absolute;
+        width: 345px;
+        bottom: 15px;
+        left: 10px;
+        margin: 40px;
+        height: auto;
+        box-shadow: 0 1.5px 1.5px 0 rgba(0, 0, 0, 0.08);
+        padding: 25px 29px 15px; } }
+    .carousel-content-box__button {
+      font-size: 1.4rem;
+      font-weight: 400;
+      line-height: 2.4rem;
+      text-decoration: none;
+      background-color: #ffbc0d;
+      padding: 9pt 13px;
+      color: black;
+      display: inline-flex;
+      border-radius: 4px;
+      align-items: center;
+      margin: 10px 29px 50px 0;
+      /* Responsive - tablet landscape and above */
+      /* Check for tablet portrait breakpoint (768px) */
+      /* Check for tablet landscape breakpoint (1024px) */
+      /* Check for tablet max landscape breakpoint (1024px) */
+      /* Check for small desktop breakpoint (1280px) */ }
+      @media only screen and (min-width: 64em) {
+        .carousel-content-box__button {
+          font-size: 1.5rem;
+          padding: 9pt 15px;
+          margin: 0 29px 50px 0; } }
+  .carousel-navigation {
+    position: absolute;
+    bottom: 3%;
+    left: 4%;
+    transform: translateX(4%);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: transparent;
+    /* Responsive - tablet landscape and above */
+    /* Check for tablet portrait breakpoint (768px) */
+    /* Check for tablet landscape breakpoint (1024px) */
+    /* Check for tablet max landscape breakpoint (1024px) */
+    /* Check for small desktop breakpoint (1280px) */
+    /* Carousel navigation arrows */
+    /* Carousel navigation dots */
+    /* Active dot in carousel navigation */
+    /* Carousel navigation buttons */
+    /* < button in carousel navigation */
+    /* > button in carousel navigation */
+    /* space element in carousel navigation */ }
+    @media only screen and (min-width: 64em) {
+      .carousel-navigation {
+        bottom: 70px;
+        left: 7%;
+        transform: translateX(7%); } }
+    .carousel-navigation .fa-angle-left,
+    .carousel-navigation .fa-angle-right {
+      font-size: 2.4rem;
+      /* Responsive - tablet landscape and above */
+      /* Check for tablet portrait breakpoint (768px) */
+      /* Check for tablet landscape breakpoint (1024px) */
+      /* Check for tablet max landscape breakpoint (1024px) */
+      /* Check for small desktop breakpoint (1280px) */ }
+      @media only screen and (min-width: 64em) {
+        .carousel-navigation .fa-angle-left,
+        .carousel-navigation .fa-angle-right {
+          font-size: 3rem; } }
+    .carousel-navigation__dot {
+      display: inline-block;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background-color: gray;
+      margin: 10px 5px 0 5px;
+      cursor: pointer; }
+    .carousel-navigation .active {
+      background-color: black; }
+    .carousel-navigation button {
+      border: none;
+      background-color: white;
+      font-size: 1.5rem;
+      cursor: pointer; }
+    .carousel-navigation #prevBtn {
+      padding-right: 15px;
+      /* Responsive - tablet landscape and above */
+      /* Check for tablet portrait breakpoint (768px) */
+      /* Check for tablet landscape breakpoint (1024px) */
+      /* Check for tablet max landscape breakpoint (1024px) */
+      /* Check for small desktop breakpoint (1280px) */ }
+      @media only screen and (min-width: 64em) {
+        .carousel-navigation #prevBtn {
+          padding-right: 30px; } }
+    .carousel-navigation #nextBtn {
+      padding-left: 15px;
+      /* Responsive - tablet landscape and above -  */
+      /* Check for tablet portrait breakpoint (768px) */
+      /* Check for tablet landscape breakpoint (1024px) */
+      /* Check for tablet max landscape breakpoint (1024px) */
+      /* Check for small desktop breakpoint (1280px) */ }
+      @media only screen and (min-width: 64em) {
+        .carousel-navigation #nextBtn {
+          padding-left: 30px; } }
+    .carousel-navigation .space {
+      padding: 0 20px; }
+
+/* Sass mixin for handling responsive breakpoints */

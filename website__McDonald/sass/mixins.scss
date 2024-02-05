@@ -1,0 +1,31 @@
+
+/* Sass mixin for handling responsive breakpoints */
+@mixin respond($breakpoint) {
+    /* Check for tablet portrait breakpoint (768px) */
+    @if $breakpoint == tab-port {
+        @media only screen and (min-width: 48em) {
+            @content;
+        } 
+    }
+
+    /* Check for tablet landscape breakpoint (1024px) */
+    @if $breakpoint == tab-land {
+        @media only screen and (min-width: 64em) {
+            @content;
+        }
+    }
+
+     /* Check for tablet max landscape breakpoint (1024px) */
+     @if $breakpoint == tab-land-max {
+        @media only screen and (max-width: 64em) {
+            @content;
+        }
+    }
+
+    /* Check for small desktop breakpoint (1280px) */
+    @if $breakpoint == s-desktop {
+        @media only screen and (min-width: 80em) {
+            @content;
+        } 
+    }
+}
